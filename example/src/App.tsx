@@ -1,12 +1,11 @@
 import * as React from 'react';
-
 import { StyleSheet, View } from 'react-native';
 import { CardReaderView } from 'react-native-card-reader';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <CardReaderViewManager color="#32a852" style={styles.box} />
+      <CardReaderView color="#32a852" style={styles.box} />
     </View>
   );
 }
