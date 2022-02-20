@@ -1,0 +1,6 @@
+rootProject.name = 'CardReaderExample'
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+
+include ':reactnativecardreader'
+project(':reactnativecardreader').projectDir = new File(rootProject.projectDir, '../../android')
