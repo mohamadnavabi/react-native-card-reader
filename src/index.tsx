@@ -3,6 +3,7 @@ import {
   UIManager,
   Platform,
   ViewStyle,
+  NativeModules,
 } from 'react-native';
 
 const LINKING_ERROR =
@@ -16,7 +17,7 @@ type CardReaderProps = {
   style: ViewStyle;
 };
 
-const ComponentName = 'CardReaderView';
+const ComponentName = 'NativeReaderView';
 
 export const CardReaderView =
   UIManager.getViewManagerConfig(ComponentName) != null
@@ -24,3 +25,12 @@ export const CardReaderView =
     : () => {
         throw new Error(LINKING_ERROR);
       };
+
+
+// export * from './NativeReaderView';
+
+// type NativeReaderType = {
+//   multiply(a: number, b: number): Promise<number>;
+// }
+
+// export const { NativeReader } = NativeModules;

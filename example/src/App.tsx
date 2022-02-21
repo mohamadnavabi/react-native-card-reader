@@ -6,6 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <CardReaderView color="#32a852" style={styles.box} />
+      {/* <NativeReader /> */}
     </View>
   );
 }
