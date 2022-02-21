@@ -6,11 +6,11 @@ import com.facebook.react.uimanager.SimpleViewManager
 import com.facebook.react.uimanager.ThemedReactContext
 import com.facebook.react.uimanager.annotations.ReactProp
 
-class CardReaderViewManager : SimpleViewManager<View>() {
+class CardReaderViewManager : SimpleViewManager<NativeReaderView>() {
   override fun getName() = "CardReaderView"
 
-  override fun createViewInstance(reactContext: ThemedReactContext): View {
-    return View(reactContext)
+  override fun createViewInstance(reactContext: ThemedReactContext): NativeReaderView {
+    return NativeReaderView(reactContext)
   }
 
   @ReactProp(name = "color")
