@@ -5,7 +5,7 @@ import { CardReaderView } from 'react-native-card-reader';
 export default function App() {
   return (
     <View style={styles.container}>
-      <CardReaderView color="#32a852" style={styles.box} />
+      <CardReaderView color="#ffffff" style={styles.box} onNumberDetected={e => { console.log(e.nativeEvent.nativeNumber) }} />
     </View>
   );
 }
@@ -17,8 +17,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   box: {
-    width: 60,
-    height: 60,
+    width: '100%',
+    height: '100%',
     marginVertical: 20,
   },
 });

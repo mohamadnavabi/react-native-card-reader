@@ -28,5 +28,5 @@
     android:layout_height="50dp"
     android:id="@+id/sendToRN"
     android:layout_gravity="center"
-    android:text="Open Camera" />
+    android:text="Send To RN" />
 </LinearLayout>
